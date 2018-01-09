@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/header.ejs %>
+  <title>Mongo:Log</title>
+</head>
+<body>
+  <% include ../partials/nav.ejs %>
+  <% include ../partials/sidenav.ejs %>
+  <div class="main-container container text-center">
+    <h1 class="brand-logo">Start using mongo:log</h1><br>
+    <h5>Easy way to create your own REST API , or to use someone elses for testing purposes.</h5><br>
+    <a href="/dashboard" class="waves-effect btn-large blue">Dashboard</a><br><br>
+    <p>It is recomended to use JSON Formatter google chrome extension , you can download it from <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa" target="_blank">here.</a></p>
+    <%- messages('pages/messages', locals) %>
+  </div>
+  <% include ../partials/menubtn.ejs %>
+  <% include ../partials/login.ejs %>
+  <% include ../partials/register.ejs %>
+  <% include ../partials/scripts.ejs %>
+</body>
+</html>

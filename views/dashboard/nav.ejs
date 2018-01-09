@@ -1,0 +1,17 @@
+<div class="navbar-fixed">
+  <nav class="blue">
+    <div class="nav-wrapper container">
+      <a href="/dashboard" class="brand-logo">Dashboard</a>
+      <% if(isLogedIn) {%>
+        <ul class="right">
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+        <% } else {%>
+        <ul class="right">
+          <li><a href="/">Homepage</a></li>
+        </ul>
+        <% } %>
+        
+    </div>
+  </nav>
+</div>

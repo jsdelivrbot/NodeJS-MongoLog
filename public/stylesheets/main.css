@@ -1,0 +1,35 @@
+@font-face { font-family: Bronx;  src: url('BronxBystreets.ttf'); }
+@font-face { font-family: Sippin; src: url('Sippin.ttf'); }
+
+.brand-logo{
+    font-family: Sippin;
+}
+.text-center{
+    text-align: center;
+}
+.main-container{
+    margin-top: 75px;
+}
+.success{
+    width:100%;
+    background: lightblue;
+}
+.fail{
+    background: red;
+}
+.error{
+    background: firebrick;
+}
+#jsonbody{
+    height: 300px;
+    max-height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 300px;
+    overflow: visible;
+}
+.cardtitle{
+    padding-top: 25px;
+    font-family:Sippin ;
+
+}

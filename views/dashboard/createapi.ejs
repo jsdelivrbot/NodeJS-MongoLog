@@ -1,0 +1,24 @@
+<!-- Modal Structure -->
+<form id="modal3" class="modal modal-fixed-footer" method="POST" action="/create/api">
+  <div class="modal-content">
+    <h4>Create REST API</h4>
+     <div class="row">
+        <div class="input-field col s12 m12 l12">
+          <input placeholder="Title..." name="title" type="text" class="validate">
+          <label for="title">REST API Title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m12 l12">
+          <textarea name="jsonbody" id="jsonbody" class="materialize-textarea" placeholder="Body ...."></textarea>
+          <label for="body">REST API Body</label>
+        </div>
+      </div>
+      <ul class="collection">
+        <li class="collection-item active">Body must be in valid JSON format.</li>
+      </ul>
+  </div>
+  <div class="modal-footer">
+    <input type="submit" class="modal-action modal-close btn-flat waves-effect waves-green " value="submit">
+  </div>
+</form>

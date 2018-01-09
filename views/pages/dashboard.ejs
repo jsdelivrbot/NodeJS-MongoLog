@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/header.ejs %>
+    <title>Dashboard</title>
+</head>
+
+<body>
+  <% include ../dashboard/nav.ejs %>
+    <div class="container text-center">
+      <%- messages('pages/messages', locals) %>
+        <div class="row">
+          <% for(var i in api){ %>
+            <div class="col s12 m6 l6">
+              <div class="card">
+                <div class="card-image">
+                  <h1 class="cardtitle"><%= api[i].title %></h1>
+                </div>
+                
+                <div class="card-action apilink">
+                  <a class="" href="/api/<%= keys[i] %>">Check this API</a>
+                </div>
+              </div>
+            </div>
+            
+              <% } %>
+        </div>
+    </div>
+    <% include ../dashboard/createapi.ejs %>
+      <% include ../dashboard/floatbtn.ejs %>
+        <% include ../partials/scripts.ejs %>
+</body>
+
+</html>

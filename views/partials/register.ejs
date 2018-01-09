@@ -1,0 +1,33 @@
+<!-- Modal Structure -->
+<form id="modal1" class="modal modal-fixed-footer" method="POST" action="/users/add">
+  <div class="modal-content">
+    <h4>Register</h4>
+    <p>A bunch of text</p>
+    <div class="row">
+      <div class="input-field col s12 m6 l6">
+        <input name="firstname" type="text" class="validate">
+        <label for="firstname">First Name</label>
+      </div>
+      <div class="input-field col s12 m6 l6">
+        <input name="lastname" type="text" class="validate">
+        <label for="lastname">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m6 l6">
+        <input name="username" type="text" class="validate">
+        <label for="Username">Username</label>
+      </div>
+      <div class="input-field col s12 m6 l6">
+        <input name="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <ul class="collection">
+    <li class="collection-item active">Fill all fields</li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <input type="submit" class="modal-action modal-close btn-flat waves-effect waves-green " value="submit">
+  </div>
+</form>
